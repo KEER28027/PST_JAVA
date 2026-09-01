@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class ST5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int balance = 0;
+
+        for (int i = 0; i < n; i++) {
+            String operation = sc.next();
+            int amount = sc.nextInt();
+
+            if (operation.equals("Deposit")) {
+                balance += amount;
+            } else if (operation.equals("Withdraw")) {
+                balance -= amount;
+            }
+        }
+
+        System.out.println(balance);
+    }
+}
